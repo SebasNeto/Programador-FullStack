@@ -1,0 +1,53 @@
+/* Estilo base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+  
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+  
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+  
+.card {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    width: 250px;
+    height: 150px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+  
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+  
+/* Estilo para o card selecionado */
+.card.selected {
+    border: 2px solid #007bff;
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.5);
+}
+  
+/* Ocultar elementos com a classe hidden */
+.card.hidden {
+    display: none;
+}
+  

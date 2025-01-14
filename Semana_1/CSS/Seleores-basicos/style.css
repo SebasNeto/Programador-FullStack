@@ -1,0 +1,132 @@
+/* (*) seletor universal - aplica estilo em todos os elementos da página */
+* {
+    color: rgb(88, 173, 39);
+    margin: 0;
+    padding: 0;
+}
+
+/* ##################################### */
+
+/* seletor de tag */
+header, footer{
+    background: black;
+    padding: 10px;
+}
+
+/* ##################################### */
+
+/* seletor aninhado */
+
+/* 
+    <nav>
+        <a href="#">LOGO</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+*/
+
+nav a{
+    color: blue;
+}
+
+/* ##################################### */
+
+/* seletor de filhos */
+/* abaixo do outro - contido */
+
+/* 
+    <nav>
+        <a href="#">LOGO</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+*/
+
+/* a é filho de nav, enquanto li é filho de lu */
+
+nav > a{
+    display: block;
+    color: darkred;
+    padding: 4px;
+}
+
+/* ##################################### */
+
+/* Seletor de classes */
+
+/* 
+        <p class="laranja"> texto </p>
+        <p class="verde">texto</p>
+*/
+
+.laranja{
+    color: rgb(255, 165, 0);
+}
+
+.verde{
+    color: rgb(0, 255, 8);
+}
+
+/* ##################################### */
+
+/* seletores de id */
+
+/* 
+    <section id="secao-principal">
+        <h2>Exemplos de Seletores</h2>
+        <p>Este parágrafo não está utilizando um seletor de classe.</p>
+        <p class="laranja">
+            Este parágrafo está utilizando um seletor de classe.
+        </p>
+        <p class="verde">Este parágrafo está utilizando um seletor de classe.</p>
+    </section>
+*/
+
+#secao-principal{
+    background: rgb(39, 39, 36);
+    border: solid;
+    border-color: rgb(0, 30, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+/* ##################################### */
+
+/* combinação de seletores */
+#secao-principal > * {
+    margin-top: 10px;
+}
+
+/* ##################################### */
+
+/* seletores de sequência */
+input{
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+
+input + input{
+    margin-top: 30px;
+}
+
+h2 + p {
+    padding: 30px;
+}
+
+/* ##################################### */
+
+/* seletores de propriedade */
+input[name="email"] {
+    background-color: #f5a623;
+}
+
+input[type="password"] {
+    background-color: #27ae60;
+}

@@ -1,0 +1,19 @@
+.box{
+    background: chartreuse;
+    border: 2px rgb(6, 3, 48) solid;
+
+}
+
+.box{
+    /* magens externas */
+    margin-top: 6px;
+    margin-left: 10px;
+    margin-right: 15px;
+    margin-bottom: 50px;
+
+    /* margens internas */
+    padding-top: 9px;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-bottom: 50px;    
+}
